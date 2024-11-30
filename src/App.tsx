@@ -24,11 +24,20 @@ function App() {
       ></Button>
 
 
-      <Button 
+<Button 
         variant={"primary"}
-        startIcon={<PlusIcon size={"sm"} />} 
-        endIcon={<ShareIcon size={"sm"} />} 
+        startIcon={<PlusIcon />} 
+        endIcon={<ShareIcon />} 
         size="sm" 
+        title={"Share"}
+      ></Button>
+
+
+<Button 
+        variant={"primary"}
+        startIcon={<PlusIcon size={"md"} />} 
+        endIcon={<ShareIcon size={"md"} />} 
+        size="md" 
         title={"Share"}
       ></Button>
     </>

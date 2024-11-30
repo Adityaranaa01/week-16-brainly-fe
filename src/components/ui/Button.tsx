@@ -14,16 +14,19 @@ const sizeStyles = {
     "sm": "px-2 py-1 text-sm rounded-sm",
 }
 
+
 const variantStyles = {
     "primary": "bg-purple-600 text-white",
     "secondary": "bg-purple-400 text-purple-600",
 }
 
 export function Button(props: ButtonInterface) {
-
+    const Comp = props.startIcon;
     return <button className={sizeStyles[props.size] + " " + variantStyles[props.variant]}>
-        <div className="flex">
-            {props.startIcon}
+        <div className="flex items-center">
+            <span className="text-xs">
+                <Comp size={props.size} />
+            </span>
             <div className="pl-2 pr-2">
                 {props.title}
             </div>
